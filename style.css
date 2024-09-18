@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Matemasie&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url(https://i.pinimg.com/originals/69/02/91/6902915a253f1dc9fbf51db0d37dece4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  padding: 13px;
+  margin: 0;
+}
+
+.navbar li {
+  display: flex;
+  letter-spacing: 2px;
+}
+
+.navbar li a {
+  color: black;
+}
+
+p {
+  font-size: 16px;
+  color: rgb(165, 219, 114);
+  position: relative;
+  right: 60px;
+  font-size: 40px;
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: rgb(141, 228, 186);
+  text-align: right;
+  font-size: 80px;
+  line-height: 100px;
+  font-stretch: ultra-expanded;
+  position: relative;
+  top: 140px;
+  right: 300px;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#porsche {
+  position: relative;
+  left: 750px;
+  bottom: 30px;
+  color: aliceblue;
+}
+
+h5 {
+  text-align: right;
+  display: flex;
+  position: relative;
+  left: 350px;
+  color: aliceblue;
+}
+
+#profileLogo {
+  position: relative;
+  left: 170px;
+}
+
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  bottom: 500px;
+}
+
+.slides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 0px;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 580px;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left: -30px;
+}
+
+.prev:hover, .next:hover {
+  background-color: transparent
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  bottom: 500px;
+}
+.dots{
+  position: absolute;
+  bottom: 150px;
+  left: 400px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.bottom-txt h1{
+  position: relative;
+  right: 1100px;
+   top: -490px;
+}
+.bottom-txt h2{
+  position: relative;
+  right: -230px;
+  top: -490px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: aliceblue;
+
+}
+.bottom-txt h3{
+  position: relative;
+  right: -450px;
+  top: -590px;
+  font-size: 30px;
+  color: aliceblue;
+ 
+}
+.bottom-txt h5{
+  position: relative;
+  left: 800px;
+  top: -650px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: lighter;
+  color: aliceblue;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
